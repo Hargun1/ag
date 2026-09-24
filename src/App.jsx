@@ -227,7 +227,7 @@ function App() {
       </section>
 
       {/* Footer / CTA */}
-      <footer id="contact" className="bg-[#112a1d] text-white py-20 relative overflow-hidden">
+      <footer id="contact" className="bg-brand-dark text-white py-20 relative overflow-hidden">
         <div className="absolute -left-20 -bottom-20 opacity-10">
           <Leaf className="w-96 h-96" />
         </div>
