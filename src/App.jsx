@@ -237,8 +237,8 @@ function App() {
 
           <div className="glass-panel !bg-white/10 !border-white/20 p-8 md:p-12 mb-8">
             <h3 className="text-brand-accent font-bold tracking-widest uppercase mb-2">Bulk Inquiries & Customization</h3>
-            <a href="mailto:corporate@happhygreenz.com" className="text-2xl md:text-3xl font-medium hover:text-brand-accent transition-colors block mb-6">
-              corporate@happhygreenz.com
+            <a href="mailto:Sales@agrowvitz.com" className="text-2xl md:text-3xl font-medium hover:text-brand-accent transition-colors block mb-6">
+              Sales@agrowvitz.com
             </a>
 
             <div className="inline-flex items-center justify-center gap-3 bg-white text-brand-green px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 cursor-pointer">
