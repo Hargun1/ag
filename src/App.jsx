@@ -69,8 +69,8 @@ function App() {
               alt="Root Cube Planter"
               className="w-full h-auto rounded-[2rem] object-cover aspect-square"
             />
-            {/* The Custom Logo Overlay on the White Bucket */}
-            <Watermark className="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-12" />
+            {/* Brand Watermark on the bucket */}
+            <Watermark className="top-[55%] left-[55%] transform -translate-x-1/2 -translate-y-1/2 mt-12 ml-4" />
           </div>
 
         </div>
