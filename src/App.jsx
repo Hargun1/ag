@@ -73,15 +73,6 @@ function App() {
             <Watermark className="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-12" />
           </div>
 
-          <div className="absolute -bottom-6 -right-6 glass-panel p-4 flex items-center gap-3 animate-bounce shadow-xl">
-            <div className="bg-green-100 p-2 rounded-full">
-              <Leaf className="text-brand-green w-5 h-5" />
-            </div>
-            <div>
-              <p className="text-xs text-gray-500 font-medium">Fully Customizable</p>
-              <p className="text-sm font-bold text-gray-800">Your Logo Here</p>
-            </div>
-          </div>
         </div>
       </section>
 
