@@ -10,6 +10,12 @@ import {
   Sprout
 } from 'lucide-react';
 
+const Watermark = ({ className = "bottom-4 right-4" }) => (
+  <div className={`absolute pointer-events-none opacity-80 z-10 ${className}`}>
+    <img src="/images/logo.png" alt="Agrowvitz Logo" className="w-24 md:w-32 h-auto drop-shadow-md mix-blend-multiply" />
+  </div>
+);
+
 function App() {
   return (
     <div className="min-h-screen bg-brand-light selection:bg-brand-green selection:text-white font-sans overflow-x-hidden">
@@ -64,12 +70,7 @@ function App() {
               className="w-full h-auto rounded-[2rem] object-cover aspect-square"
             />
             {/* The Custom Logo Overlay on the White Bucket */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center opacity-80 mix-blend-multiply pointer-events-none mt-12">
-              <Sprout className="w-8 h-8 text-gray-500 mb-1 opacity-70" />
-              <span className="text-2xl font-black tracking-widest text-gray-600 uppercase" style={{ fontFamily: 'sans-serif' }}>
-                AGROWVITZ
-              </span>
-            </div>
+            <Watermark className="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-12" />
           </div>
 
           <div className="absolute -bottom-6 -right-6 glass-panel p-4 flex items-center gap-3 animate-bounce shadow-xl">
@@ -97,8 +98,9 @@ function App() {
           <div className="grid md:grid-cols-2 gap-10">
             {/* Feature 1 */}
             <div className="group rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300">
-              <div className="h-64 overflow-hidden">
+              <div className="h-64 overflow-hidden relative">
                 <img src="/images/WhatsApp Image 2026-09-17 at 10.05.28.jpeg" alt="Kitchen Elegance" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <Watermark />
               </div>
               <div className="p-8 bg-white">
                 <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
@@ -112,8 +114,9 @@ function App() {
 
             {/* Feature 2 */}
             <div className="group rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300">
-              <div className="h-64 overflow-hidden">
+              <div className="h-64 overflow-hidden relative">
                 <img src="/images/WhatsApp Image 2026-09-17 at 10.05.29.jpeg" alt="Urban Oasis" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <Watermark />
               </div>
               <div className="p-8 bg-white">
                 <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
@@ -138,6 +141,7 @@ function App() {
             </h2>
             <div className="relative rounded-2xl overflow-hidden shadow-lg mb-8 bg-white border border-gray-100">
               <img src="/images/WhatsApp Image 2026-09-17 at 10.05.30.jpeg" alt="Kit Contents" className="w-full h-auto" />
+              <Watermark />
             </div>
 
             <ul className="space-y-4">
@@ -201,8 +205,9 @@ function App() {
 
           <div className="grid md:grid-cols-2 gap-12">
             <div className="flex flex-col">
-              <div className="rounded-3xl overflow-hidden shadow-md mb-6 h-72">
+              <div className="rounded-3xl overflow-hidden shadow-md mb-6 h-72 relative">
                 <img src="/images/WhatsApp Image 2026-09-17 at 10.05.31.jpeg" alt="Roots" className="w-full h-full object-cover" />
+                <Watermark />
               </div>
               <h3 className="text-2xl font-bold mb-3">Optimal Root Suspension</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -216,6 +221,7 @@ function App() {
                 <img src="/images/WhatsApp Image 2026-09-17 at 10.00.18.jpeg" alt="Oxygenated Chamber" className="w-full h-full object-cover opacity-80" />
                 <div className="absolute inset-0 bg-blue-500/20 mix-blend-overlay"></div>
                 <Droplet className="absolute text-white w-20 h-20 opacity-90 drop-shadow-lg animate-pulse" />
+                <Watermark />
               </div>
               <h3 className="text-2xl font-bold mb-3">Oxygenated Water Chamber</h3>
               <p className="text-gray-600 leading-relaxed">
