@@ -7,7 +7,9 @@ import {
   CheckCircle2,
   Package,
   Ruler,
-  Sprout
+  Sprout,
+  ShoppingCart,
+  ExternalLink
 } from 'lucide-react';
 
 const Watermark = ({ className = "bottom-4 right-4" }) => (
@@ -31,9 +33,14 @@ function App() {
           <a href="#specs" className="hover:text-brand-green transition-colors">Specs</a>
           <a href="#science" className="hover:text-brand-green transition-colors">The Science</a>
         </div>
-        <a href="#contact" className="bg-brand-green hover:bg-[#153825] text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-          Bulk Order
-        </a>
+        <div className="flex items-center gap-3">
+          <a href="https://happhygreenz.com/agrow-towers/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 border-2 border-brand-green text-brand-green hover:bg-brand-green hover:text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5">
+            <ShoppingCart className="w-4 h-4" /> Buy Now
+          </a>
+          <a href="#contact" className="bg-brand-green hover:bg-[#153825] text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+            Bulk Order
+          </a>
+        </div>
       </nav>
 
       {/* Hero Section */}
@@ -51,11 +58,21 @@ function App() {
             Grow fresh culinary herbs and exotic plants with <strong className="text-brand-green">zero soil mess.</strong>
           </p>
 
-          <div className="flex items-center gap-4 pt-4">
+          <div className="flex items-center gap-4 pt-4 flex-wrap">
             <div className="bg-brand-accent text-[#6b551f] font-bold px-6 py-3 rounded-lg shadow-sm">
               <span className="text-sm block font-medium opacity-80">STARTING FROM</span>
               <span className="text-2xl">₹999</span> <span className="text-sm font-medium">onwards</span>
             </div>
+            <a
+              href="https://happhygreenz.com/agrow-towers/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/btn inline-flex items-center gap-2 bg-brand-green hover:bg-[#153825] text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <ShoppingCart className="w-5 h-5 transition-transform group-hover/btn:scale-110" />
+              Buy Now
+              <ExternalLink className="w-4 h-4 opacity-60" />
+            </a>
           </div>
         </div>
 
@@ -186,6 +203,30 @@ function App() {
         </div>
       </section>
 
+      {/* Mid-Page Buy CTA */}
+      <section className="py-12 bg-gradient-to-r from-brand-green to-[#153825] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <Leaf className="absolute -left-10 -top-10 w-48 h-48 text-white" />
+          <Sprout className="absolute -right-6 -bottom-6 w-40 h-40 text-white" />
+        </div>
+        <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+          <div className="text-white text-center md:text-left">
+            <h3 className="text-2xl md:text-3xl font-bold mb-2">Want one for yourself?</h3>
+            <p className="text-green-100 text-lg opacity-90">Skip the bulk order — buy your Agrow Tower directly from our store.</p>
+          </div>
+          <a
+            href="https://happhygreenz.com/agrow-towers/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-3 bg-white text-brand-green px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 shrink-0"
+          >
+            <ShoppingCart className="w-6 h-6 transition-transform group-hover:scale-110" />
+            Buy Now
+            <ExternalLink className="w-5 h-5 opacity-50" />
+          </a>
+        </div>
+      </section>
+
       {/* Science Section */}
       <section id="science" className="py-24 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -241,9 +282,21 @@ function App() {
               Sales@agrowvitz.com
             </a>
 
-            <div className="inline-flex items-center justify-center gap-3 bg-white text-brand-green px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 cursor-pointer">
-              <Package className="w-5 h-5" />
-              Request a Custom Quote
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <div className="inline-flex items-center justify-center gap-3 bg-white text-brand-green px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 cursor-pointer">
+                <Package className="w-5 h-5" />
+                Request a Custom Quote
+              </div>
+              <a
+                href="https://happhygreenz.com/agrow-towers/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 bg-brand-accent text-[#6b551f] px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1"
+              >
+                <ShoppingCart className="w-5 h-5" />
+                Buy Directly
+                <ExternalLink className="w-4 h-4 opacity-60" />
+              </a>
             </div>
           </div>
 
