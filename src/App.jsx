@@ -12,9 +12,11 @@ import {
   ExternalLink
 } from 'lucide-react';
 
-const Watermark = ({ className = "bottom-4 right-4" }) => (
-  <div className={`absolute pointer-events-none opacity-80 z-10 ${className}`}>
-    <img src="/images/logo.png" alt="Agrowvitz Logo" className="w-24 md:w-32 h-auto drop-shadow-md mix-blend-multiply" />
+const Watermark = ({ className = "bottom-3 right-3" }) => (
+  <div className={`absolute pointer-events-none z-10 ${className}`}>
+    <div className="bg-white/85 backdrop-blur-md px-2.5 py-1 rounded-xl border border-white/60 shadow-sm flex items-center">
+      <img src="/images/logo.png" alt="Agrowvitz Logo" className="h-5 md:h-6 w-auto object-contain" />
+    </div>
   </div>
 );
 
@@ -86,8 +88,8 @@ function App() {
               alt="Root Cube Planter"
               className="w-full h-auto rounded-[2rem] object-cover aspect-square"
             />
-            {/* Brand Watermark on the bucket */}
-            <Watermark className="top-[55%] left-[55%] transform -translate-x-1/2 -translate-y-1/2 mt-12 ml-4" />
+            {/* Brand Watermark */}
+            <Watermark className="bottom-5 right-5" />
           </div>
 
         </div>
