@@ -52,7 +52,7 @@ function App() {
             Corporate Gifting Collection
           </div>
           <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-[1.1]">
-            Root Cube <br />
+            verdaCube <br />
             <span className="text-brand-green">4-4 Planter</span>
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
@@ -85,7 +85,7 @@ function App() {
           <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl bg-white p-2">
             <img
               src="/images/WhatsApp Image 2026-09-17 at 10.00.18.jpeg"
-              alt="Root Cube Planter"
+              alt="verdaCube Planter"
               className="w-full h-auto rounded-[2rem] object-cover aspect-square"
             />
             {/* Brand Watermark */}
